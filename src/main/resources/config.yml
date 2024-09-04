@@ -1,0 +1,73 @@
+reloadConfig: '&aYou have reloaded the config'
+noPermission: '&cError: You lack the necessary permissions to execute this command.'
+
+# Messages
+notInSameWorld: '&cYou are not in the same world as the targeted grave. Please go to {world}.'
+graveNoLongerExists: '&eThe grave you are looking for no longer exists.'
+graveDistanceMessage: '&bDistance to your grave: {blocks} blocks.'
+graveDistanceCooldownMessage: '&7Cooldown: Wait {seconds} seconds before trying again.'
+tooPoor: '&cInsufficient funds: Your balance is {balance}$. Needed: {price}$.'
+teleported: '&aYou have paid {price}$ and teleported to your grave.'
+noGraves: '&cNo active graves found.'
+onDeathMessage: '&cA grave has been placed at your death location: {world} {x} {y} {z}. Use /sgraves to see your active graves'
+
+# Cost configuration
+#For every blockPer the player will pay pricePer +  extraPriceForAnotherWorld
+blockPer: 50 # Blocks per payment unit
+pricePer: 10 # Cost per block unit
+extraPriceForAnotherWorld: 500 # Additional cost for teleporting to a grave in a different world
+
+
+#false - Prevents the player from giving away the compass
+canPlayerGiveOutCompass: false
+
+
+#true - Restricts grave access to the owner and staff with permission spiffgrave.accessgrave
+onlyOwnerCanOpen: true
+
+
+# Players retain half of their experience upon death (1/2) or (1/expRemain)
+expRemain: 2
+
+
+#In seconds
+# Grave exists for 90000 seconds (equivalent to 25 hours) in this example
+graveTimer: 90000
+
+
+#Give last grave compass on respawn
+giveGraveCompassOnRespawn: true
+
+
+#MythicMobs grave entity ID
+graveEntityID: "GRAVE"
+
+
+# Grave inventory customization
+graveInventoryName: '&6{player}`s grave'
+
+
+# Hologram settings
+hologramYOffset: 1.50 # Vertical offset for holograms above the grave
+hologramLines:
+#  - '&6☠ &e{player} &6☠'
+#  - '&aTime remaining: {remainTimer}'
+#  - '&aItems: {amount} | Exp: {exp}'
+
+
+# Compass details
+compassDisplayName: '&4Grave Compass'
+compassLore:
+#  - '&bWorld: {world}'
+#  - '&bCoordinates: x:{x} | y:{y} | z:{z}'
+#  - '&bClick right to view distance information'
+
+
+# GUI item configuration for selecting a grave
+guiItemSelectDisplayName: '&3Grave Time Remaining: {remainTimer}'
+guiItemSelectLore:
+#  - '&bLocation: {world}, {x}, {y}, {z}'
+#  - '&b{distance} blocks away'
+#  - '&bClick left to receive a compass'
+#  - '&bShift + Right-Click to teleport to grave'
+#  - '&cTeleport cost: {price}'
